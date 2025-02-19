@@ -25,7 +25,7 @@ source ~/esp/esp-idf/export.sh
 espsecure.py digest_sbv2_public_key --keyfile secure_boot_signing_key.pem --output digest.bin
 
 # Bruler la cle publique
-espefuse.py --port /dev/ttyACM0 --chip esp32s3 burn_key BLOCK_KEY0 digest.bin SECURE_BOOT_DIGEST0
+espefuse.py --port /dev/ttyACM0 --chip esp32s3 burn_key BLOCK_KEY2 digest.bin SECURE_BOOT_DIGEST0
 
 # Activer Secure Boot
 espefuse.py --port /dev/ttyACM0 --chip esp32s3 burn_efuse SECURE_BOOT_EN
