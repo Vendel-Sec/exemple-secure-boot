@@ -2,8 +2,5 @@
 /.embuild
 /target
 /Cargo.lock
-firmware.bin
-firmware-signed.bin
-bootloader-signed.bin
-secure_boot_signing_key.pem*
-digest.bin
+temp/
+keys/
